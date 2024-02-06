@@ -1,0 +1,9 @@
+#Numbers {
+    border: 1px black;
+    padding-left: 1em;
+    background-color: rgba(54, 80, 154, 0.87);
+    text-align: right;
+}
+#tableHeader {
+    font-weight: bolder;
+}

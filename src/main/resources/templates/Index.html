@@ -4,15 +4,40 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="../static/css/header.css">
     <link rel="stylesheet" href="../static/css/footer.css">
+    <link rel="stylesheet" href="../static/css/main.css">
     <title>Table with Random Numbers</title>
 </head>
 <body>
 
 <header th:fragment="Header">
-    <h1>Index Page</h1>
+    <h1>Table with Random Numbers</h1>
 </header>
 <main>
-     main tag.
+    <p onclick="RandomNumber()">Generate A New Table </p>
+    <div id="Number"> </div>
+
+
+    <table id="Numbers">
+        <thead>
+        <tr>
+            <td id="tableHeader">Numbers</td>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="rowNum : ${rows}">
+            <!-- testing
+            <td th:text="${numRows}">Row Number</td> -->
+            <td> <span th:text="${rowNum}"> </span></td>
+        </tr>
+        </tbody>
+    </table>
+
+
+
+
+
+
+
 </main>
 <footer th:fragment="Footer">
     Sheridan College&nbsp;&nbsp;
